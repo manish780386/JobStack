@@ -1,31 +1,78 @@
-<<<<<<< HEAD
-# .
+# 🚀 JobSt@ack – Full Stack Job Portal
 
-Created with **krito** - A modern full-stack scaffolding tool.
+A modern **Job Portal Web Application** where users can:
 
-## Project Structure
+✅ Search Jobs  
+✅ Apply Jobs  
+✅ Save Jobs ❤️  
+✅ Track Applications  
+✅ Manage Profile  
+✅ Resume Builder  
+✅ Premium Services  
+✅ Admin Job Posting  
 
-This is a **frontend-only** React application.
+Built with **React + Django + REST API**
 
-### Tech Stack
-- ⚛️ React 18
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🧭 React Router DOM
-- 📡 Axios
-- 🎯 Lucide React Icons
+---
 
-### Getting Started
+# 🌟 Live Features
+
+## 👤 User
+- Register / Login
+- View all jobs
+- Search jobs
+- Filter by company
+- Save jobs
+- Apply jobs
+- Application history
+- Profile with photo
+- Resume upload
+- LocalStorage support
+
+## 🏢 Company
+- Company list auto-generated
+- Company wise jobs
+
+## 🛠 Services
+- Resume Builder
+- Premium Membership
+- Career Guidance
+- Mock Interviews
+- Job Alerts
+
+## 🔐 Admin
+- Create jobs
+- Delete jobs
+- Close jobs
+
+---
+
+# 🧠 Tech Stack
+
+## Frontend
+- React.js
+- Axios
+- React Router
+- CSS (Premium UI)
+- Lucide Icons
+
+## Backend
+- Django
+- Django REST Framework
+- JWT Auth
+- SQLite
+
+---
+
+
+---
+
+# ⚙️ How To Run (Very Important)
+
+#  Clone Project
+
 ```bash
-npm run dev
-```
+git clone <your-repo-link>
+cd JobStack
 
-Your app will be available at http://localhost:5173
 
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-=======
-# JobStack
->>>>>>> 744acb45fc361efded6de52341d6b93a7fd1edac
