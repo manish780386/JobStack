@@ -1,0 +1,209 @@
+/* =========================
+   FOOTER BASE
+========================= */
+
+.footer {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  padding-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================
+   CONTAINER GRID
+========================= */
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+
+  padding-bottom: 50px;
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+}
+
+.footer-brand h2 {
+  font-size: 22px;
+  font-weight: 700;
+
+  background: linear-gradient(45deg, #3b82f6, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* description */
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 260px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 6px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-col a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* underline animation */
+.footer-col a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #3b82f6;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: white;
+  transform: translateX(4px);
+}
+
+.footer-col a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.socials a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+
+  transition: 0.3s;
+}
+
+/* glow hover */
+.socials a:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: linear-gradient(45deg, #3b82f6, #22d3ee);
+  box-shadow: 0 6px 18px rgba(59,130,246,0.45);
+}
+
+
+/* =========================
+   BOTTOM BAR
+========================= */
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px 0;
+
+  font-size: 13px;
+  color: #94a3b8;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.25);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.footer-col {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .footer-col p {
+    margin: auto;
+  }
+}

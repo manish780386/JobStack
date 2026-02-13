@@ -1,0 +1,94 @@
+.admin-container {
+  padding: 40px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.job-form {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.job-form input,
+.job-form textarea,
+.job-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.post-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.job-list {
+  display: grid;
+  gap: 15px;
+}
+
+.job-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.type {
+  font-size: 12px;
+  background: #e0e7ff;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.actions button {
+  margin-left: 8px;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.logout {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* LOGIN */
+.admin-login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  display: grid;
+  gap: 12px;
+  width: 280px;
+}

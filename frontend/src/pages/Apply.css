@@ -1,0 +1,164 @@
+/* =========================
+   PAGE
+========================= */
+.apply-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   CARD
+========================= */
+.apply-card {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 35px 30px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+
+  animation: fadeUp 0.6s ease;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+.apply-card h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.company {
+  text-align: center;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+.apply-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* inputs */
+.apply-card input,
+.apply-card textarea {
+  padding: 11px 12px;
+
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+
+  font-size: 14px;
+  outline: none;
+
+  transition: 0.25s;
+  background: white;
+}
+
+
+/* focus effect */
+.apply-card input:focus,
+.apply-card textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+  transform: scale(1.02);
+}
+
+
+/* textarea */
+.apply-card textarea {
+  resize: none;
+  height: 90px;
+}
+
+
+/* file */
+input[type="file"] {
+  padding: 8px;
+  background: #f8fafc;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+.apply-card button {
+  margin-top: 8px;
+  padding: 12px;
+
+  border-radius: 12px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  background: #6366f1;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* hover */
+.apply-card button:hover:not(:disabled) {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+
+/* disabled */
+.apply-card button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+
+  .apply-card {
+    padding: 25px 18px;
+  }
+
+  .apply-card h2 {
+    font-size: 20px;
+  }
+}

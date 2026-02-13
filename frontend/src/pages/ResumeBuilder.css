@@ -1,0 +1,75 @@
+.resume-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+/* LEFT FORM */
+.resume-form {
+  width: 40%;
+  padding: 40px;
+  background: white;
+  overflow-y: auto;
+}
+
+.resume-form h2 {
+  margin-bottom: 20px;
+}
+
+.resume-form input,
+.resume-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.resume-form textarea {
+  min-height: 80px;
+}
+
+/* buttons */
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background: #4338ca;
+}
+
+
+/* RIGHT PREVIEW */
+.resume-preview {
+  width: 60%;
+  padding: 50px;
+  background: white;
+
+  margin: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.resume-preview h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.resume-preview h3 {
+  margin-top: 18px;
+  color: #4f46e5;
+}

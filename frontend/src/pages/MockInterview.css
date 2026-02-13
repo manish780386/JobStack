@@ -1,0 +1,68 @@
+.interview-page {
+  min-height: 100vh;
+  padding: 60px 8%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.interview-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.interview-card:hover {
+  transform: translateY(-8px);
+}
+
+.interview-card span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.interview-card button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  color: white;
+}
+
+/* HISTORY */
+.history-title {
+  margin-top: 60px;
+}
+
+.history-box {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}

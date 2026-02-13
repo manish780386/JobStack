@@ -1,0 +1,178 @@
+/* ===== Page Layout ===== */
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+
+/* ===== Login Card ===== */
+
+.login-form {
+  width: 360px;
+  padding: 45px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+
+  animation: fadeUp 0.6s ease;
+}
+
+
+/* ===== Animation ===== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ===== Heading ===== */
+
+.login-form h2 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+/* ===== Input Group ===== */
+
+.input-group {
+  display: flex;
+  align-items: center;
+
+  background: white;
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+
+/* Icon */
+
+.input-group svg {
+  margin-right: 8px;
+  color: #00c6ff;
+}
+
+
+/* Input */
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+}
+
+
+/* Focus Effect */
+
+.input-group:focus-within {
+  border-color: #00c6ff;
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 198, 255, 0.4);
+}
+
+
+/* ===== Login Button ===== */
+
+.login-btn {
+  padding: 12px;
+  border-radius: 10px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+
+  transition: 0.3s;
+}
+
+
+/* Hover */
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+/* ===== Register Link ===== */
+
+.login-form p {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+.login-form a {
+  color: #ffd369;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+/* error */
+.error-box {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* spinner */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 90%;
+    padding: 30px;
+  }
+}

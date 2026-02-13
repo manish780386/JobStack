@@ -1,0 +1,57 @@
+.support-page {
+  min-height: 100vh;
+  padding: 60px 40px;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeUp 0.5s ease;
+}
+
+.support-page h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #38bdf8;
+}
+
+/* FAQ */
+.faq h3 {
+  margin-top: 20px;
+}
+
+/* contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.contact-form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+/* animation */
+@keyframes fadeUp {
+  from {opacity:0; transform:translateY(30px);}
+  to {opacity:1; transform:translateY(0);}
+}
