@@ -1,72 +1,99 @@
-.company-page {
-  padding: 50px;
-  min-height: 100vh;
+/* =====================================
+        COMPANY PAGE BASE
+===================================== */
 
+.company-page {
+  padding: 60px 6%;
+  min-height: 100vh;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   font-family: "Segoe UI", sans-serif;
 }
 
-/* ===== HEADER ===== */
+
+/* =====================================
+        HEADER
+===================================== */
+
 .company-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .company-header h1 {
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 22px;
+  font-weight: 700;
 }
 
 .company-header input {
-  width: 350px;
-  padding: 12px;
-  border-radius: 10px;
+  width: 380px;
+  max-width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
   border: none;
   outline: none;
 
   background: rgba(255, 255, 255, 0.08);
   color: white;
+  font-size: 15px;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
+}
+
+.company-header input::placeholder {
+  color: rgba(255,255,255,0.6);
 }
 
 .company-header input:focus {
-  box-shadow: 0 0 10px #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+  background: rgba(255, 255, 255, 0.12);
 }
 
-/* ===== GRID ===== */
+
+/* =====================================
+        GRID
+===================================== */
+
 .company-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
-/* ===== CARD ===== */
+
+/* =====================================
+        CARD
+===================================== */
+
 .company-card {
-  padding: 25px;
-  border-radius: 16px;
+  padding: 28px;
+  border-radius: 18px;
 
   background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
 
   text-align: center;
+  transition: 0.35s ease;
 
-  transition: 0.3s;
-  animation: fadeUp 0.5s ease;
+  animation: fadeUp 0.6s ease;
 }
 
 .company-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(56, 189, 248, 0.35);
 }
 
-/* logo */
+
+/* =====================================
+        LOGO
+===================================== */
+
 .company-logo {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin: auto;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 
   display: flex;
   align-items: center;
@@ -77,9 +104,15 @@
 
   border-radius: 50%;
   background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+
+  box-shadow: 0 8px 20px rgba(56,189,248,0.4);
 }
 
-/* text */
+
+/* =====================================
+        TEXT
+===================================== */
+
 .location,
 .jobs {
   margin: 6px 0;
@@ -88,34 +121,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
+
+  color: #cbd5e1;
 }
 
-/* button */
-.view-btn {
-  margin-top: 12px;
-  padding: 8px 14px;
 
-  border-radius: 8px;
+/* =====================================
+        BUTTON
+===================================== */
+
+.view-btn {
+  margin-top: 14px;
+  padding: 9px 16px;
+
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 
-  background: #22c55e;
+  background: linear-gradient(45deg, #22c55e, #16a34a);
   color: white;
+  font-weight: 500;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .view-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #22c55e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.5);
 }
 
-/* ===== ANIMATION ===== */
+
+/* =====================================
+        ANIMATION
+===================================== */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(35px);
   }
   to {
     opacity: 1;
@@ -123,9 +167,105 @@
   }
 }
 
-/* ===== MOBILE ===== */
+
+/* =====================================
+        TABLET (1024px)
+===================================== */
+
+@media (max-width: 1024px) {
+
+  .company-page {
+    padding: 50px 4%;
+  }
+
+  .company-header h1 {
+    font-size: 32px;
+  }
+
+  .company-grid {
+    gap: 24px;
+  }
+}
+
+
+/* =====================================
+        MOBILE (768px)
+===================================== */
+
 @media (max-width: 768px) {
+
+  .company-page {
+    padding: 40px 20px;
+  }
+
+  .company-header h1 {
+    font-size: 26px;
+  }
+
   .company-header input {
     width: 100%;
+    font-size: 14px;
+  }
+
+  .company-card {
+    padding: 22px;
+  }
+
+  .company-logo {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .view-btn {
+    width: 100%;
+  }
+}
+
+
+/* =====================================
+        SMALL MOBILE (480px)
+===================================== */
+
+@media (max-width: 480px) {
+
+  .company-page {
+    padding: 30px 15px;
+  }
+
+  .company-header h1 {
+    font-size: 22px;
+  }
+
+  .company-card {
+    padding: 18px;
+  }
+
+  .location,
+  .jobs {
+    font-size: 13px;
+  }
+
+  .view-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+
+/* =====================================
+        EXTRA SMALL (360px)
+===================================== */
+
+@media (max-width: 360px) {
+
+  .company-header h1 {
+    font-size: 18px;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
   }
 }
