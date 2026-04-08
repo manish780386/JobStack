@@ -59,6 +59,10 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="admin btn">
+        <Link to = "/admin">Admin</Link>
+      </div>
+
       <div className="footer-bottom">
         © {new Date().getFullYear()} JobSt@ack. All rights reserved.
       </div>
